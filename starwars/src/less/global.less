@@ -1,0 +1,65 @@
+// Replaces index.css
+* { box-sizing: border-box; }
+
+// Hiding overflow early on the development process could result in bad code and hard to 
+// identify problems later on down the road. So we don't enable it until we need to.
+// html { overflow-x: hidden; } 
+
+html { font-size: 62.5%;  scroll-behavior: smooth;  }
+
+html, body {
+  .font-body;
+  height: 100%;
+  color: @main-font-color;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0.4rem;
+}
+
+h1, .h1 { font-size: 4.2rem; .font-title; }
+h2, .h2 { font-size: 3.2rem; font-weight: 400; .font-body; }
+h3, .h3 { font-size: 3.0rem; .font-body; }
+h4, .h4 { font-size: 2.2rem; .font-body; }
+h5, .h5 { font-size: 2.0rem; .font-body; }
+h6, .h6 { font-size: 1.8rem; .font-body; }
+
+li { font-size: 1.4rem; }
+a { 
+  text-decoration: none; 
+  color: initial;
+  &:hover {
+    color: initial;
+    text-decoration: none;
+  }
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.container-basic {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;  
+}
+
+.italic { font-style: italic; }
+
+.centered {
+  float: none;
+  margin: 0 auto;
+}
+  
+.display-none {
+  display: none;
+}
+
+.container { 
+  max-width: 700px; 
+  margin: 0 auto;
+  .box-shadow(0px;6px;20px;3px;@light-gray);
+  border-radius: 10px;
+}

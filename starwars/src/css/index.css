@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Share Tech Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Share Tech Mono'), local('ShareTechMono-Regular'), url(https://fonts.gstatic.com/s/sharetechmono/v8/J7aHnp1uDWRBEqV98dVQztYldFcLowEA.ttf) format('truetype');
+}
+.cltgray {
+  color: rgba(55, 55, 55, 0.5);
+}
+.font-title {
+  font-family: 'Share Tech Mono', monospace;
+}
+.font-logo {
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  height: 100%;
+  color: #232323;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0.4rem;
+}
+h1,
+.h1 {
+  font-size: 4.2rem;
+  font-family: 'Share Tech Mono', monospace;
+}
+h2,
+.h2 {
+  font-size: 3.2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+h3,
+.h3 {
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+h4,
+.h4 {
+  font-size: 2.2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+h5,
+.h5 {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+h6,
+.h6 {
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+li {
+  font-size: 1.4rem;
+}
+a {
+  text-decoration: none;
+  color: initial;
+}
+a:hover {
+  color: initial;
+  text-decoration: none;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container-basic {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.italic {
+  font-style: italic;
+}
+.centered {
+  float: none;
+  margin: 0 auto;
+}
+.display-none {
+  display: none;
+}
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0px 6px 20px 3px rgba(55, 55, 55, 0.5);
+  border-radius: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url('../assets/sw-bg.jpg');
+  background-size: cover;
+}
+body .App {
+  text-align: center;
+}
+body .App .Header {
+  color: #443e3e;
+  text-shadow: 1px 1px 5px #fff;
+}

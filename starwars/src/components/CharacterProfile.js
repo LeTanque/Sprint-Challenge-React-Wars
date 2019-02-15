@@ -13,10 +13,11 @@ const CharacterProfile = props => {
 
                 <Character 
                     key={character.created} 
-                    name={character.name}     
-                    height={character.height}
-                    mass={character.mass}
-                    birth_year={character.birth_year}
+                    // name={character.name}     
+                    // height={character.height}
+                    // mass={character.mass}
+                    // birth_year={character.birth_year}
+                    character={character}
                 />
                 
             ))}

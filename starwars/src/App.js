@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import CharacterProfile from './components/CharacterProfile';
 
-class App extends Component {
+class App extends React.Component {
   constructor() {
     super();
     this.state = {

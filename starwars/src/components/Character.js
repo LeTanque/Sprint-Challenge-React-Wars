@@ -9,9 +9,9 @@ const Character = props => {
             <div className='character-card'>
                 <h3>{props.name}</h3>
                 <div className='character-stats'>
-                    <p>{props.height} cm</p>
-                    <p>{props.mass} kg</p>
-                    <p>Born in {props.birth_year}</p>
+                    <p><strong className='cgray italic'>Height:</strong> <span>{props.height} cm</span></p>
+                    <p><strong className='cgray italic'>Weight:</strong> <span>{props.mass} kg</span></p>
+                    <p><strong className='cgray italic'>Born:</strong> <span>{props.birth_year}</span></p>
                 </div>
             </div>
 

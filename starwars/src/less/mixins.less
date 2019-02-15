@@ -26,11 +26,14 @@
 @white: #ffffff;
 @light: #aaaaaa;
 @light-gray: rgba(55,55,55,0.5);
+@gray: #999999;
 @dark: #232323;
 @black: #000000;
 
 // CSS Color definitions
 .cltgray { color: @light-gray; }
+.cgray { color: @gray; }
+.cblack { color: @black; }
 
 // Breakpoints
 @phone-small: ~"(min-width: 0px) and (max-width: 350px)";
@@ -135,3 +138,7 @@
 .box-shadow(@box-shadow-x: 0px;@box-shadow-y: 6px;@box-shadow-blur: 20px;@box-shadow-spread: 3px;@box-shadow-color: @dark) {
   box-shadow: @box-shadow-x @box-shadow-y @box-shadow-blur @box-shadow-spread @box-shadow-color;
 }
+
+// Buttons
+.btn-gray { background-color: @gray; color: @dark; }
+.btn-clear { background-color: @clear-color; color: @white; }

@@ -33,14 +33,17 @@ class App extends Component {
   render() {
     // Design
     // Components will connect to App.js
-    // Character profile will take in the character stats as props and return the profile card
+    // Character profile will take in the character stats as props and return the styled card
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-          <CharacterProfile
-            starwarsChars={this.state.starwarsChars}
-          />
+      <div className='bg-splash'>
+        <div className="App">
+          <h1 className="Header">React Wars</h1>
+            <hr className='hr'></hr>
+            <CharacterProfile
+              starwarsChars={this.state.starwarsChars}
+            />
 
+        </div>
       </div>
     );
   }

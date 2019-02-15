@@ -56,6 +56,12 @@
   border: @border-style-width @border-style @border-style-color;
 }
 
+// Horizontal RuLeZ
+.hr-style(@hr-margin:20px 0 30px 0; @hr-border-style:1px solid @light-gray) {
+  margin: @hr-margin;
+  border: @hr-border-style;
+}
+
 // Buttons
 .btn(@btn-bg-color; @btn-color; @btn-color-hover: @btn-bg-color; @btn-bg-color-hover: @btn-color;  @btn-width: 50%;  @btn-border-radius: 0;  @btn-font-size: 1.8rem;  @btn-padding: 8px 10px) {
   background-color: @btn-bg-color;
@@ -128,18 +134,4 @@
 }
 .box-shadow(@box-shadow-x: 0px;@box-shadow-y: 6px;@box-shadow-blur: 20px;@box-shadow-spread: 3px;@box-shadow-color: @dark) {
   box-shadow: @box-shadow-x @box-shadow-y @box-shadow-blur @box-shadow-spread @box-shadow-color;
-}
-
-
-
-// Calculator buttons
-.calculator-height(@calc-height: 500px){
-  height: @calc-height;
-}
-
-// @calc-button-height: @calc-height/@calc-rows;
-
-.calculator-button(@calc-button-height: 100px; @calc-button-padding: 35px) {
-  padding: @calc-button-padding;
-  height: @calc-button-height;
 }

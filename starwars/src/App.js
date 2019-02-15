@@ -6,7 +6,7 @@ class App extends React.Component {
     super();
     this.state = {
       starwarsChars: [],
-      nextPage: [],
+      nextPage: '',
       // currentPage: `https://swapi.co/api/people/?page=${this.state.pageNumber}`
       currentPage: `https://swapi.co/api/people/?page=1`
     };
@@ -18,17 +18,19 @@ class App extends React.Component {
   }
 
   getCharacters = URL => {
-    // feel free to research what this code is doing.
-    // At a high level we are calling an API to fetch some starwars data from the open web.
+    // At a high level we are calling an API to fetch some starwars data.
     // We then take that data and resolve it our state.
     fetch(URL)
     .then(res => {
       return res.json();
     })
     .then(data => {
-      console.log(data);
-      this.setState({ starwarsChars: data.results });
-      this.setState({ nextPage: data.next });  // Store next page of characters url to nextPage array.
+      // console.log(data);
+      this.setState({ 
+        starwarsChars: data.results,
+        nextPage: data.next 
+      });
+      // this.setState({ nextPage: data.next });  // Store next page of characters url to nextPage object value.
     })
     .catch(err => {
       throw new Error(err);
@@ -40,11 +42,12 @@ class App extends React.Component {
   // }
 
   render() {
-    // Design
+    // Notes on design of application:
     // Components will connect to App.js
     // Character profile will take in the character stats as props and return the styled card
+    
     // console.log(this.state.starwarsChars);
-    // console.log(this.state.pages);
+    console.log(this.state.nextPages);
     return (
       <div className='bg-splash'>
         <div className="App">

@@ -408,7 +408,7 @@ body .bg-splash {
 .character-card h3 {
   background-color: rgba(255, 255, 255, 0.15);
   padding: 10px;
-  font-weight: bolder;
+  font-weight: 400;
 }
 .character-card .character-stats {
   background-color: rgba(255, 255, 255, 0.15);

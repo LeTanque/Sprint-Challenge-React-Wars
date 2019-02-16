@@ -25,7 +25,6 @@ class App extends React.Component {
       return res.json();
     })
     .then(data => {
-      console.log(data);
       this.setState({ starwarsChars: data.results });
       this.setState({ nextPage: data.next });  // Store next page of characters url to nextPage object value.
       this.setState({ previousPage: data.previous });  // Store next page of characters url to nextPage object value.
@@ -37,7 +36,7 @@ class App extends React.Component {
 
   gotoNextPage = () => { // This function invokes getCharacters with the stateful nextPage url string.
     if (this.state.nextPage === null){
-      this.getCharacters(this.state.currentPage);  
+      this.getCharacters(this.state.currentPage);
     } else {
       this.getCharacters(this.state.nextPage);
     }

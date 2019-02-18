@@ -1,0 +1,420 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Share Tech Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Share Tech Mono'), local('ShareTechMono-Regular'), url(https://fonts.gstatic.com/s/sharetechmono/v8/J7aHnp1uDWRBEqV98dVQztYldFcLowEA.ttf) format('truetype');
+}
+.cltgray {
+  color: rgba(55, 55, 55, 0.5);
+}
+.cgray {
+  color: #999999;
+}
+.cblack {
+  color: #000000;
+}
+.font-title {
+  font-family: 'Share Tech Mono', monospace;
+}
+.font-logo {
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+}
+.btn-gray {
+  background-color: #999999;
+  color: #232323;
+}
+.btn-clear {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  height: 100%;
+  color: #232323;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0.4rem;
+}
+h1,
+.h1 {
+  font-size: 4.2rem;
+  font-family: 'Share Tech Mono', monospace;
+}
+h2,
+.h2 {
+  font-size: 3.2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+h3,
+.h3 {
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+h4,
+.h4 {
+  font-size: 2.2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+h5,
+.h5 {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+h6,
+.h6 {
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+li {
+  font-size: 1.4rem;
+}
+a {
+  text-decoration: none;
+  color: initial;
+}
+a:hover {
+  color: initial;
+  text-decoration: none;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container-basic {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.italic {
+  font-style: italic;
+}
+strong {
+  font-weight: bolder;
+}
+.centered {
+  float: none;
+  margin: 0 auto;
+}
+.display-none {
+  display: none;
+}
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0px 6px 20px 3px rgba(55, 55, 55, 0.5);
+  border-radius: 10px;
+}
+form {
+  display: flex;
+  z-index: 10;
+  position: relative;
+  width: 400px;
+  margin: 16px auto;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  flex-flow: column;
+}
+form > input {
+  border: 0;
+  padding: 12px 16px;
+  margin: 8px;
+  background: #fff;
+  font-size: 1rem;
+  width: 240px;
+  border-radius: 0;
+  outline: 0;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+}
+button {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  padding: 0 16px;
+  margin-top: 16px;
+  min-width: 64px;
+  height: 36px;
+  vertical-align: middle;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+  background-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 36px;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+button::-moz-focus-inner {
+  border: none;
+}
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  padding: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 1s, transform 0.5s;
+}
+button:hover,
+button:focus {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+button:hover::before {
+  opacity: 0.08;
+}
+button:focus::before {
+  opacity: 0.24;
+}
+button:hover:focus::before {
+  opacity: 0.3;
+}
+button:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+button:active::after {
+  opacity: 0.32;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0s;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url('../assets/sw-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+body .bg-splash {
+  background: linear-gradient(rgba(35, 35, 35, 0.95), rgba(170, 170, 170, 0.1));
+}
+.App {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 0 5px 0;
+}
+.App .Header {
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  margin-left: 20px;
+  text-shadow: 1px 1px 5px #232323;
+}
+.App .hr {
+  margin: 20px 0 30px 0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.App .button-container {
+  display: flex;
+}
+.App .button-container button {
+  border-radius: 0;
+  margin: 0 auto 10px auto;
+}
+.character-card {
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  margin: 20px auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+.character-card h3 {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  font-weight: 400;
+}
+.character-card .character-stats {
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 0 0 0 20px;
+  padding: 10px;
+}
+.character-card .character-stats span {
+  float: right;
+}

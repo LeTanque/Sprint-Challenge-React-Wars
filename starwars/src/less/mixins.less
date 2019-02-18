@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Share+Tech+Mono');
+
+// Color pointers
+@nav-bg: @lambda-black;
+@nav-font: @lambda-red;
+@nav-border: @dark;
+
+@header-font-color: @lambda-red;
+@main-font-color: @dark;
+
+@footer-background: @lambda-black;
+@footer-font-color: @lambda-red;
+
+@button-bg-color: @lambda-red;
+@border-real: @dark;
+
+.bg-gradient(@bg-gradient-a; @bg-a-opacity; @bg-gradient-b; @bg-b-opacity) {
+  background: linear-gradient( rgba(@bg-gradient-a, @bg-a-opacity), rgba(@bg-gradient-b, @bg-b-opacity));
+};
+
+// Color Vars
+@lambda-red: #a00000;
+@lambda-black: #131313;
+
+@clear-color: rgba(255,255,255,0.15);
+@white: #ffffff;
+@light: #aaaaaa;
+@light-gray: rgba(55,55,55,0.5);
+@gray: #999999;
+@dark: #232323;
+@black: #000000;
+
+// CSS Color definitions
+.cltgray { color: @light-gray; }
+.cgray { color: @gray; }
+.cblack { color: @black; }
+
+// Breakpoints
+@phone-small: ~"(min-width: 0px) and (max-width: 350px)";
+@phone: ~"(min-width: 0px) and (max-width: 600px)";
+@medium: ~"(min-width: 601px) and (max-width: 820px)";
+
+// Transition duration
+.transition(@duration) {
+  -webkit-transition-duration: @duration;
+  -moz-transition-duration: @duration;
+  transition-duration: @duration;
+}
+
+// Border
+.border-radius(@tl: 0; @tr: @tl; @bl: 0; @br: @bl) {
+  border-radius: @tl @tr @bl @br;
+}
+.border-left-style(@border-style-width: 5px; @border-style-color: @luncher-saddle) {
+  border-left: @border-style-width solid @border-style-color;
+  padding-right: @border-style-width * 2;
+}
+.border-style(@border-style-width: 5px; @border-style: solid; @border-style-color: @luncher-saddle) {
+  border: @border-style-width @border-style @border-style-color;
+}
+
+// Horizontal RuLeZ
+.hr-style(@hr-margin:20px 0 30px 0; @hr-border-style:1px solid @light-gray) {
+  margin: @hr-margin;
+  border: @hr-border-style;
+}
+
+// Buttons
+.btn(@btn-bg-color; @btn-color; @btn-color-hover: @btn-bg-color; @btn-bg-color-hover: @btn-color;  @btn-width: 50%;  @btn-border-radius: 0;  @btn-font-size: 1.8rem;  @btn-padding: 8px 10px) {
+  background-color: @btn-bg-color;
+  color: @btn-color;
+  border-radius: @btn-border-radius;
+  font-size: @btn-font-size;
+  font-weight: bolder;
+  text-align: center;
+  width: @btn-width;
+  min-width: 100px;
+  padding: @btn-padding;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    color: @btn-color-hover;
+    background-color: @btn-bg-color-hover;
+    .transition(0.75s);
+  }
+  @media @phone {
+    width: 70%;
+  }
+}
+
+// Links
+.link(@link-fg-color; @link-bg-color; @link-bold: 600) {
+  color: @link-fg-color;
+  background-color: unset;
+  font-weight: @link-bold;
+  text-decoration: none;
+  &:hover {
+    color: @link-bg-color;
+    background-color: @link-fg-color;
+    font-weight: @link-bold;
+    .border-radius(10px; 10px; 0; 0);
+    .transition(0.75s);
+    @media @phone {
+      .border-radius(5px; 5px; 0; 0);
+    }
+    @media @phone-small {
+      .border-radius(0; 0; 0; 0);
+      letter-spacing: 0.75rem;
+    }
+  }
+}
+
+// Positioning
+.sticky-top(@top-pos) {
+  position: sticky;
+  top: @top-pos;
+}
+
+// Fonts
+.font-body(@weight: 400) {
+  font-family: 'Roboto', sans-serif;
+  font-weight: @weight;
+}
+.font-title {
+  font-family:  'Share Tech Mono', monospace;
+  // font-weight: @weight;
+}
+.font-logo {
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+}
+
+// shadows
+.font-shadow(@font-shadow-x: 1px;@font-shadow-y: 1px;@font-shadow-blur: 5px;@font-shadow-color: black) {
+  text-shadow: @font-shadow-x @font-shadow-y @font-shadow-blur @font-shadow-color;
+}
+.box-shadow(@box-shadow-x: 0px;@box-shadow-y: 6px;@box-shadow-blur: 20px;@box-shadow-spread: 3px;@box-shadow-color: @dark) {
+  box-shadow: @box-shadow-x @box-shadow-y @box-shadow-blur @box-shadow-spread @box-shadow-color;
+}
+
+// Buttons
+.btn-gray { background-color: @gray; color: @dark; }
+.btn-clear { background-color: @clear-color; color: @white; }

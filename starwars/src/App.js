@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import './App.css';
+import './index.scss';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      starwarsChars: []
-    };
-  }
+  state = {
+    starwarsChars: []
+  };
+
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
@@ -30,6 +28,7 @@ class App extends Component {
   };
 
   render() {
+    // console.log(this.state.starwarsChars)
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
